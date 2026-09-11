@@ -291,7 +291,7 @@
       </div>
       <div style="background: #F4F1EC; padding: 36px 34px 32px">
         <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; color: #1C2333; margin-bottom: 22px">Inscrição</div>
-        <form method="post" action="#" novalidate>
+        <form id="form-clube" method="post" action="#" novalidate>
           <div style="margin-bottom: 16px">
             <label for="b-nome" style="display: block; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 8px">Nome</label>
             <input id="b-nome" name="NOME" type="text" autocomplete="given-name" required style="width: 100%; padding: 13px 15px; font-family: Fustat, sans-serif; font-size: 15px; color: #1C2333; background: #fff; border: 1px solid #CBBFB6; border-radius: 2px">
@@ -310,6 +310,14 @@
           </label>
           <button class="btn" type="submit" style="width: 100%; padding: 17px 20px; font-family: Fustat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #F4F1EC; background: #1C2333; border: 0; border-radius: 2px; cursor: pointer">Quero participar</button>
         </form>
+
+        <div id="form-sucesso" hidden>
+          <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 23px; color: #1C2333; line-height: 1.3; margin-bottom: 14px">Inscrição feita.</div>
+          <p style="font-size: 15px; color: #4B5468; line-height: 1.65; margin: 0 0 22px">O último passo é entrar no grupo do WhatsApp. É lá que combinamos as datas, escolhemos o livro e conversamos entre um encontro e outro.</p>
+          <a class="btn" href="https://chat.whatsapp.com/KkT2thWkjutAHXdyx5hAHe" target="_blank" rel="noopener" style="display: block; text-align: center; padding: 17px 20px; font-family: Fustat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #F4F1EC; background: #1C2333; border-radius: 2px; text-decoration: none">Entrar no grupo do WhatsApp</a>
+          <p style="font-size: 13px; color: #655950; line-height: 1.6; margin: 16px 0 0">Você também vai receber esse link por e-mail.</p>
+        </div>
+        <p id="form-erro" hidden style="font-size: 13.5px; color: #8A3324; line-height: 1.6; margin: 14px 0 0">Não consegui registrar agora. Tente de novo em instantes ou escreva para <a href="mailto:fe@fernandascavacini.com.br" style="color: #8A3324">fe@fernandascavacini.com.br</a>.</p>
         <p style="margin: 16px 0 0; font-size: 13px; color: #655950; line-height: 1.5">Você recebe o convite e o acesso ao grupo do clube no seu e-mail.</p>
       </div>
     </div>
@@ -327,5 +335,41 @@
   </div>
 </div>
 
+<script>
+(function () {
+  var f = document.getElementById('form-clube');
+  if (!f) return;
+  var ok = document.getElementById('form-sucesso');
+  var err = document.getElementById('form-erro');
+  var btn = f.querySelector('button[type=submit]');
+  var label = btn ? btn.textContent : '';
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!f.checkValidity()) { f.reportValidity(); return; }
+    err.hidden = true;
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+    var d = new FormData();
+    d.append('fields[email]', f.EMAIL.value.trim());
+    d.append('fields[name]', f.NOME.value.trim());
+    d.append('fields[cargo]', f.CARGO.value.trim());
+    d.append('ml-submit', '1');
+    d.append('anticsrf', 'true');
+    fetch('https://assets.mailerlite.com/jsonp/1409808/forms/198306804506035434/subscribe', { method: 'POST', body: d })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (!j || !j.success) throw new Error('falha');
+        f.hidden = true;
+        ok.hidden = false;
+        ok.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      })
+      .catch(function () {
+        btn.disabled = false;
+        btn.textContent = label;
+        err.hidden = false;
+      });
+  });
+})();
+</script>
 </body>
 </html>
