@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clube A Devolutiva · clube de leitura de gestão | Scavacini</title>
+<meta name="description" content="Clube de leitura de gestão conduzido por Fernanda Scavacini. Uma vez por mês, gestores leem o mesmo livro e conversam sobre ele, ao vivo, por uma hora. Online e gratuito.">
+<meta property="og:title" content="Clube A Devolutiva · clube de leitura de gestão">
+<meta property="og:description" content="Uma vez por mês, gestores leem o mesmo livro e conversam sobre ele, ao vivo, por uma hora. Online e gratuito. Abertura em 13 de outubro.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..600&family=Fustat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #EFE9E4; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #655950; text-decoration: none; }
+  a:hover { color: #1C2333; text-decoration: underline; text-underline-offset: 3px; }
+
+  .btn:hover { background: #2A3550; color: #fff; text-decoration: none; }
+  input[type=text]:focus, input[type=email]:focus { border-color: #1C2333; outline: none; }
+
+  .faq { border-bottom: 1px solid #C1B3A8; }
+  .faq summary { list-style: none; display: flex; align-items: baseline; gap: 20px; padding: 24px 4px;
+    cursor: pointer; font-family: 'Playfair Display', Georgia, serif; font-size: 21px; font-weight: 400;
+    color: #1C2333; line-height: 1.3; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary:hover { color: #655950; }
+  .faq summary:focus-visible { outline: 2px solid #1C2333; outline-offset: 2px; }
+  .faq .n { font-family: Fustat, sans-serif; font-size: 11px; letter-spacing: .12em; color: #655950; flex: 0 0 26px; }
+  .faq .q { flex: 1 1 auto; }
+  .faq summary::after { content: '+'; font-family: Fustat, sans-serif; font-size: 22px; font-weight: 300;
+    color: #655950; flex: 0 0 auto; line-height: 1; }
+  .faq[open] summary::after { content: '\2013'; }
+  .faq p { margin: 0; padding: 0 46px 26px; font-size: 16px; color: #4B5468; max-width: 62ch; }
+
+  @media (max-width: 640px) {
+    .wrap { padding-left: 22px !important; padding-right: 22px !important; }
+    .faq p { padding-left: 4px; padding-right: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<div style="font-family: Fustat, -apple-system, Segoe UI, sans-serif; color: #4B5468; background: #EFE9E4; line-height: 1.65; font-size: 17px">
+
+  <!-- TOPO -->
+  <div class="wrap" style="max-width: 1280px; margin: 0 auto; padding: 26px 44px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+    <div style="border-top: 1px solid #B9AA9F; border-bottom: 1px solid #B9AA9F; padding: 10px 0; text-align: center">
+      <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 19px; letter-spacing: .14em; color: #1C2333; line-height: 1.1">A DEVOLUTIVA</div>
+      <div style="font-size: 10px; letter-spacing: .28em; color: #655950; margin-top: 7px">CLUBE DE LEITURA</div>
+    </div>
+    <a href="#inscricao" style="font-size: 12px; letter-spacing: .18em; text-transform: uppercase; font-weight: 600; color: #1C2333; border-bottom: 1px solid #B9AA9F; padding-bottom: 3px">Inscrever-se</a>
+  </div>
+
+  <!-- HERO -->
+  <div class="wrap" style="max-width: 1280px; margin: 0 auto; padding: 40px 44px 0">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 64px; align-items: end">
+      <div style="padding-bottom: 20px">
+        <div style="font-size: 11px; letter-spacing: .24em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 26px">Conhecimento e relacionamento</div>
+        <h1 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(2.6rem, 5.2vw, 4.2rem); line-height: 1.05; letter-spacing: -.02em; color: #1C2333; margin: 0 0 28px; max-width: 13ch">Um clube de leitura de gestão, <em style="font-style: italic">conduzido por mim</em>.</h1>
+        <p style="margin: 0 0 16px; max-width: 46ch">Uma vez por mês a gente lê o mesmo livro e senta para conversar sobre ele, ao vivo, por uma hora. Online, com câmera aberta.</p>
+        <p style="margin: 0 0 34px; max-width: 46ch">Você lidera cercado de gente e quase nunca conversa sobre gestão com alguém que ocupa uma cadeira parecida com a sua. É esse encontro que o clube cria, e o livro é o que integra a conversa.</p>
+        <a class="btn" href="#inscricao" style="display: inline-block; padding: 17px 34px; font-size: 13px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #F4F1EC; background: #1C2333; border-radius: 2px">Quero participar</a>
+      </div>
+      <div style="position: relative">
+        <div style="position: absolute; inset: 24px -18px -18px 24px; border: 1px solid #B9AA9F; pointer-events: none"></div>
+        <img src="/fernanda-blazer-web.jpg" alt="Fernanda Scavacini" style="position: relative; display: block; width: 100%; height: clamp(380px, 46vw, 560px); object-fit: cover; object-position: center 12%">
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0; margin-top: 56px; border-top: 1px solid #C9BEB6; border-bottom: 1px solid #C9BEB6">
+      <div style="padding: 22px 24px 22px 0">
+        <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #655950; margin-bottom: 6px">Abertura</div>
+        <div style="font-size: 16px; color: #1C2333">13 de outubro, terça</div>
+      </div>
+      <div style="padding: 22px 24px; border-left: 1px solid #DCD3CC">
+        <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #655950; margin-bottom: 6px">Horário</div>
+        <div style="font-size: 16px; color: #1C2333">19h de Brasília</div>
+      </div>
+      <div style="padding: 22px 24px; border-left: 1px solid #DCD3CC">
+        <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #655950; margin-bottom: 6px">Formato</div>
+        <div style="font-size: 16px; color: #1C2333">1h, câmera aberta</div>
+      </div>
+      <div style="padding: 22px 24px; border-left: 1px solid #DCD3CC">
+        <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #655950; margin-bottom: 6px">Custo</div>
+        <div style="font-size: 16px; color: #1C2333">Gratuito</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- O QUE VOCÊ LEVA -->
+  <div class="wrap" style="max-width: 1280px; margin: 0 auto; padding: 90px 44px">
+    <div style="font-size: 11px; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 40px">O que você leva de cada encontro</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 48px">
+      <div>
+        <div style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 17px; color: #655950; margin-bottom: 14px">01</div>
+        <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: 26px; color: #1C2333; margin: 0 0 12px">Conhecimento</h3>
+        <p style="margin: 0; font-size: 16px">O livro do mês é escolhido a partir do que o grupo precisa discutir.</p>
+      </div>
+      <div>
+        <div style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 17px; color: #655950; margin-bottom: 14px">02</div>
+        <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: 26px; color: #1C2333; margin: 0 0 12px">Repertório</h3>
+        <p style="margin: 0; font-size: 16px">Você escuta como outros gestores resolveram o que está na sua frente agora.</p>
+      </div>
+      <div>
+        <div style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 17px; color: #655950; margin-bottom: 14px">03</div>
+        <h3 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: 26px; color: #1C2333; margin: 0 0 12px">Conexões</h3>
+        <p style="margin: 0; font-size: 16px">Você conversa de perto com gente que vive o que você vive, e daí nascem relações que seguem fora do encontro.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMO O LIVRO É ESCOLHIDO -->
+  <div style="background: #1C2333; color: #fff; padding: 90px 0">
+    <div class="wrap" style="max-width: 1280px; margin: 0 auto; padding: 0 44px">
+      <div style="font-size: 11px; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: #C4B7AE; margin-bottom: 30px">Como o livro é escolhido</div>
+      <p style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: clamp(1.7rem, 3.6vw, 2.6rem); line-height: 1.3; color: #fff; margin: 0 0 44px; max-width: 20ch">Você não lê um livro porque ele está na moda. Lê porque o grupo decidiu que aquele assunto é relevante.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 56px; border-top: 1px solid rgba(196,183,174,.3); padding-top: 34px">
+        <p style="margin: 0; color: #CBD2DE">Aqui o caminho é o contrário do de um clube comum. Primeiro os gestores contam o que está difícil na gestão deles, e é isso que define o tema do mês.</p>
+        <p style="margin: 0; color: #CBD2DE">Depois eu trago duas ou três opções dentro desse tema, entre livros que já li, e vocês escolhem.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PARA QUEM É -->
+  <div class="wrap" style="max-width: 1280px; margin: 0 auto; padding: 90px 44px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 64px; align-items: start">
+      <div>
+        <div style="font-size: 11px; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 18px">Para quem é</div>
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 400; color: #1C2333; font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.2; margin: 0 0 18px">Gestores experientes, diretores e fundadores.</h2>
+        <p style="margin: 0 0 14px">Pessoas que já lideram equipes e já viveram boa parte do que a gente vai discutir.</p>
+        <p style="margin: 0">A conversa começa daí, e é isso que faz a hora render para quem está na sala.</p>
+      </div>
+      <div style="background: #E3DAD3; padding: 40px 38px">
+        <div style="font-size: 11px; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 26px">O papel de cada um</div>
+        <div style="margin-bottom: 22px; padding-bottom: 22px; border-bottom: 1px solid #CBBFB6">
+          <div style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 19px; color: #1C2333; margin-bottom: 8px">O seu</div>
+          <p style="margin: 0; color: #2C3345">Chegar com a leitura feita, ou com a parte que deu, e com uma situação da sua gestão para colocar na conversa. Câmera aberta.</p>
+        </div>
+        <div style="margin-bottom: 22px; padding-bottom: 22px; border-bottom: 1px solid #CBBFB6">
+          <div style="font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 19px; color: #1C2333; margin-bottom: 8px">O meu</div>
+          <p style="margin: 0; color: #2C3345">Abrir o encontro com o contexto do livro, circular a palavra, cuidar do tempo e fechar com a síntese do que a sala construiu.</p>
+        </div>
+        <p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 18px; color: #1C2333">O clube não funciona com plateia. Quem fala leva mais.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- UM ENCONTRO -->
+  <div style="background: #E3DAD3; padding: 90px 0">
+    <div class="wrap" style="max-width: 880px; margin: 0 auto; padding: 0 44px">
+      <div style="font-size: 11px; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 20px">O que acontece em um encontro</div>
+      <p style="margin: 0 0 18px; font-size: 19px; line-height: 1.6; color: #3B4356">A conversa começa pelo livro e vai para a prática rápido. Alguém conta como usou uma ideia dali e o que deu errado. Outra pessoa discorda, porque na empresa dela aquilo funcionaria de outro jeito. Uma terceira traz o caso que ninguém tinha pensado.</p>
+      <p style="margin: 0 0 24px; font-size: 19px; line-height: 1.6; color: #3B4356">Você entra com o que já viveu e sai com o que os outros viveram. Em uma hora, o mesmo capítulo passa por dez experiências diferentes de gestão, e é isso que nenhum livro entrega sozinho.</p>
+      <p style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: clamp(1.3rem, 2.4vw, 1.7rem); line-height: 1.4; color: #1C2333">Não é aula e não é palestra.</p>
+    </div>
+  </div>
+
+  <!-- PRIMEIRO ENCONTRO + COMO FUNCIONA -->
+  <div class="wrap" style="max-width: 1280px; margin: 0 auto; padding: 90px 44px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 64px">
+      <div>
+        <div style="font-size: 11px; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 18px">13 de outubro</div>
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 400; color: #1C2333; font-size: clamp(1.6rem, 2.8vw, 2.1rem); line-height: 1.22; margin: 0 0 18px">O primeiro encontro não tem livro.</h2>
+        <p style="margin: 0 0 14px">A gente se conhece. Cada pessoa se apresenta e conta qual problema de gestão tem para resolver agora. É daí que sai o tema da primeira leitura.</p>
+        <p style="margin: 0">Quem estiver nesse primeiro encontro ajuda a definir como o clube funciona daqui para a frente.</p>
+      </div>
+      <div>
+        <div style="font-size: 11px; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 22px">Como funciona</div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1px; background: #C1B3A8; border: 1px solid #C1B3A8">
+          <div style="background: #EFE9E4; padding: 20px 22px">
+            <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #655950; margin-bottom: 8px">Frequência</div>
+            <div style="font-size: 16px; color: #1C2333; line-height: 1.4">Mensal, sempre em uma terça</div>
+          </div>
+          <div style="background: #EFE9E4; padding: 20px 22px">
+            <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #655950; margin-bottom: 8px">Horário</div>
+            <div style="font-size: 16px; color: #1C2333; line-height: 1.4">19h de Brasília</div>
+          </div>
+          <div style="background: #EFE9E4; padding: 20px 22px">
+            <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #655950; margin-bottom: 8px">Duração</div>
+            <div style="font-size: 16px; color: #1C2333; line-height: 1.4">Uma hora, online, câmera aberta</div>
+          </div>
+          <div style="background: #EFE9E4; padding: 20px 22px">
+            <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #655950; margin-bottom: 8px">Custo</div>
+            <div style="font-size: 16px; color: #1C2333; line-height: 1.4">Gratuito</div>
+          </div>
+          <div style="background: #EFE9E4; padding: 20px 22px">
+            <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #655950; margin-bottom: 8px">Bastidor</div>
+            <div style="font-size: 16px; color: #1C2333; line-height: 1.4">Grupo próprio no WhatsApp, com a leitura do mês e o link do encontro</div>
+          </div>
+          <div style="background: #EFE9E4; padding: 20px 22px">
+            <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #655950; margin-bottom: 8px">Agenda</div>
+            <div style="font-size: 16px; color: #1C2333; line-height: 1.4">Você recebe o encontro pronto para colocar na sua agenda</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUEM CONDUZ -->
+  <div style="background: #EFE9E4; padding: 0 0 90px">
+    <div class="wrap" style="max-width: 1280px; margin: 0 auto; padding: 0 44px">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 56px; align-items: center; background: #fff; padding: 52px 48px">
+        <div>
+          <div style="font-size: 11px; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 16px">Quem conduz</div>
+          <h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 400; font-size: clamp(1.8rem, 3vw, 2.3rem); color: #1C2333; margin: 0 0 22px">Fernanda Scavacini</h2>
+          <p style="margin: 0 0 16px; max-width: 48ch">Autora de <em style="font-style: italic; color: #1C2333">Abraça o Caos</em> e de <em style="font-style: italic; color: #1C2333">O Outro Lado da Gestão</em>, escrevo sobre gestão há mais de uma década. Antes disso fui gestora por 17 anos, em diferentes contextos de caos, com equipes diversas e até mais profissionais do que um único gestor poderia dar conta.</p>
+          <p style="margin: 0 0 28px; max-width: 48ch">Hoje faço consultoria em design e desenvolvimento organizacional, mentoria de lideranças, e aplico o que escrevo. LinkedIn Top Voice.</p>
+          <p style="margin: 0; padding-top: 24px; border-top: 1px solid #DCD3CC; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 21px; color: #1C2333; max-width: 30ch">A gestão é o seu legado, não o da empresa.</p>
+        </div>
+        <img src="/fernanda-camisa-web.jpg" alt="Fernanda Scavacini" style="display: block; width: 100%; height: clamp(320px, 34vw, 460px); object-fit: cover; object-position: center 12%">
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div style="background: #E3DAD3; padding: 90px 0">
+    <div class="wrap" style="max-width: 1280px; margin: 0 auto; padding: 0 44px">
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: baseline; justify-content: space-between; margin-bottom: 40px">
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 400; color: #1C2333; font-size: clamp(1.7rem, 3vw, 2.2rem); margin: 0">Perguntas</h2>
+        <div style="font-size: 11px; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: #655950">Antes de você se inscrever</div>
+      </div>
+      <div style="max-width: 860px; border-top: 1px solid #C1B3A8">
+
+        <details class="faq" open>
+          <summary><span class="n">01</span><span class="q">Preciso ter lido o livro inteiro?</span></summary>
+          <p>Não. A leitura ajuda muito, e quem leu metade participa igual, e sai com o resto discutido.</p>
+        </details>
+
+        <details class="faq">
+          <summary><span class="n">02</span><span class="q">O encontro é gravado?</span></summary>
+          <p>Vídeo não. Fica uma transcrição do que foi conversado, que eu uso para preparar a síntese do encontro e o e-mail do mês. Nada sai de lá com o nome nem com o caso de ninguém.</p>
+        </details>
+
+        <details class="faq">
+          <summary><span class="n">03</span><span class="q">Quanto custa?</span></summary>
+          <p>Nada.</p>
+        </details>
+
+        <details class="faq">
+          <summary><span class="n">04</span><span class="q">Preciso falar?</span></summary>
+          <p>Sim, e é isso que faz o clube existir. A câmera fica aberta pelo mesmo motivo.</p>
+        </details>
+
+        <details class="faq">
+          <summary><span class="n">05</span><span class="q">Onde acontece?</span></summary>
+          <p>Online. O link do encontro vai no grupo do clube, no WhatsApp, alguns dias antes.</p>
+        </details>
+
+        <details class="faq">
+          <summary><span class="n">06</span><span class="q">E se eu perder um mês?</span></summary>
+          <p>Você continua no clube. Cada leitura é independente da anterior.</p>
+        </details>
+
+        <details class="faq">
+          <summary><span class="n">07</span><span class="q">Como eu entro?</span></summary>
+          <p>Preenche o formulário aqui. Você recebe um e-mail com o acesso ao grupo, e é lá que ficam a leitura do mês e o link do encontro.</p>
+        </details>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FECHO / FORM -->
+  <div id="inscricao" style="background: #1C2333; color: #fff; padding: 90px 0">
+    <div class="wrap" style="max-width: 1280px; margin: 0 auto; padding: 0 44px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 72px; align-items: center">
+      <div>
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-weight: 400; color: #fff; font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.15; margin: 0 0 20px; max-width: 15ch">O primeiro encontro é dia <em style="font-style: italic; color: #C4B7AE">13 de outubro</em>.</h2>
+        <p style="margin: 0 0 40px; color: #CBD2DE; max-width: 40ch">A sala ainda se forma, e quem estiver lá ajuda a escolher a primeira leitura.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1px; background: rgba(196,183,174,.25); border: 1px solid rgba(196,183,174,.25); max-width: 480px">
+          <div style="background: #1C2333; padding: 18px 20px">
+            <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #C4B7AE; margin-bottom: 7px">Encontro de abertura</div>
+            <div style="font-size: 15px; color: #fff">13 de outubro, terça</div>
+          </div>
+          <div style="background: #1C2333; padding: 18px 20px">
+            <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #C4B7AE; margin-bottom: 7px">Horário</div>
+            <div style="font-size: 15px; color: #fff">19h de Brasília, online</div>
+          </div>
+          <div style="background: #1C2333; padding: 18px 20px">
+            <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #C4B7AE; margin-bottom: 7px">Duração</div>
+            <div style="font-size: 15px; color: #fff">Uma hora, câmera aberta</div>
+          </div>
+          <div style="background: #1C2333; padding: 18px 20px">
+            <div style="font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #C4B7AE; margin-bottom: 7px">Custo</div>
+            <div style="font-size: 15px; color: #fff">Gratuito</div>
+          </div>
+        </div>
+      </div>
+      <div style="background: #F4F1EC; padding: 36px 34px 32px">
+        <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; color: #1C2333; margin-bottom: 22px">Inscrição</div>
+        <form method="post" action="#" novalidate>
+          <div style="margin-bottom: 16px">
+            <label for="b-nome" style="display: block; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 8px">Nome</label>
+            <input id="b-nome" name="NOME" type="text" autocomplete="given-name" required style="width: 100%; padding: 13px 15px; font-family: Fustat, sans-serif; font-size: 15px; color: #1C2333; background: #fff; border: 1px solid #CBBFB6; border-radius: 2px">
+          </div>
+          <div style="margin-bottom: 16px">
+            <label for="b-email" style="display: block; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 8px">E-mail</label>
+            <input id="b-email" name="EMAIL" type="email" autocomplete="email" required style="width: 100%; padding: 13px 15px; font-family: Fustat, sans-serif; font-size: 15px; color: #1C2333; background: #fff; border: 1px solid #CBBFB6; border-radius: 2px">
+          </div>
+          <div style="margin-bottom: 20px">
+            <label for="b-cargo" style="display: block; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; color: #655950; margin-bottom: 8px">Cargo <span style="text-transform: none; letter-spacing: 0; font-weight: 400; color: #655950">(opcional)</span></label>
+            <input id="b-cargo" name="CARGO" type="text" autocomplete="organization-title" style="width: 100%; padding: 13px 15px; font-family: Fustat, sans-serif; font-size: 15px; color: #1C2333; background: #fff; border: 1px solid #CBBFB6; border-radius: 2px">
+          </div>
+          <label for="b-ok" style="display: flex; gap: 11px; align-items: flex-start; margin: 0 0 22px; font-size: 13.5px; color: #4B5468; line-height: 1.5; cursor: pointer">
+            <input id="b-ok" name="OPTIN" type="checkbox" required style="margin-top: 3px; flex-shrink: 0; width: 16px; height: 16px; accent-color: #1C2333">
+            <span>Autorizo o contato por e-mail sobre o clube. <a href="/politica-de-privacidade.html">Política de privacidade</a>.</span>
+          </label>
+          <button class="btn" type="submit" style="width: 100%; padding: 17px 20px; font-family: Fustat, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #F4F1EC; background: #1C2333; border: 0; border-radius: 2px; cursor: pointer">Quero participar</button>
+        </form>
+        <p style="margin: 16px 0 0; font-size: 13px; color: #655950; line-height: 1.5">Você recebe o convite e o acesso ao grupo do clube no seu e-mail.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="background: #1C2333; border-top: 1px solid rgba(196,183,174,.16); color: #7C8598; padding: 34px 0; font-size: 14px">
+    <div class="wrap" style="max-width: 1280px; margin: 0 auto; padding: 0 44px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: center">
+      <img src="/logo-scavacini-taupe.png" alt="Scavacini" style="display: block; height: 14px; width: auto">
+      <div style="display: flex; flex-wrap: wrap; gap: 26px">
+        <a href="https://fernandascavacini.com.br" style="color: #C4B7AE">fernandascavacini.com.br</a>
+        <a href="https://www.linkedin.com/in/fernandascavacini/" style="color: #C4B7AE">LinkedIn</a>
+        <a href="/politica-de-privacidade.html" style="color: #C4B7AE">Política de privacidade</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
